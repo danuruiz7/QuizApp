@@ -1,0 +1,52 @@
+.puntaje {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+.botones {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.botones a {
+  width: 20%;
+  font-size: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0a97d4;
+  box-shadow: 2px 3px 5px #033f5971;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.botones a:active {
+  transform: translateY(2px);
+}
+
+@media (max-width: 550px) {
+  .puntaje {
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .botones a {
+    width: 50%;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 900px) {
+  .botones a {
+    width: fit-content;
+  }
+}

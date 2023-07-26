@@ -1,0 +1,130 @@
+.main {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.titulo {
+  margin: 1rem 0;
+  font-size: 3.5rem;
+}
+
+.container {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(59, 59, 59, 1) 25%,
+    rgba(59, 59, 59, 1) 75%,
+    rgba(15, 15, 15, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+  border-radius: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 2px 3px 15px rgba(255, 255, 255, 0.5);
+}
+
+.container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.imagen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  border-radius: 45px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.8);
+  width: 450px;
+  height: 270px;
+}
+
+.opciones {
+  width: 55%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.opcion {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0a97d4;
+  box-shadow: 2px 3px 5px #033f5971;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.opcion:active {
+  transform: translateY(2px);
+}
+
+.correct {
+  background-color: rgb(26, 255, 0);
+}
+
+.incorrect {
+  background-color: rgb(255, 64, 0);
+}
+
+.next {
+  width: fit-content;
+}
+
+.disabled {
+  color: rgb(177, 177, 177);
+  font-weight: 100;
+  text-decoration: line-through;
+}
+
+@media (max-width: 550px) {
+  .container {
+    width: 90%;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .imagen {
+    width: 100%;
+  }
+
+  .opciones {
+    width: 50%;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 850px) {
+  .container {
+    width: 90%;
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .imagen {
+    width: 80%;
+  }
+
+  .opciones {
+    width: 100%;
+  }
+}
