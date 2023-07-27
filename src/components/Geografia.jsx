@@ -4,27 +4,29 @@ import "../styles/stylesjuego.css";
 import Terminado from "./Terminado";
 
 const Geografia = () => {
+  let seconds = 20;
+
   const [preguntaActual, setPreguntaActual] = useState(0);
   const [isFinish, setIsFinish] = useState(false);
   const [score, setScore] = useState(0);
-  const [time, setTime] = useState(5);
+  const [time, setTime] = useState(seconds);
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setTime((prevTime) => prevTime - 1);
-  //   }, 1000);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTime((prevTime) => prevTime - 1);
+    }, 1000);
 
-  //   if (time === 0) {
-  //     clearInterval(timer);
-  //   }
+    if (time === 0) {
+      clearInterval(timer);
+    }
 
-  //   return () => {
-  //     clearInterval(timer);
-  //   };
-  // }, [time]);
+    return () => {
+      clearInterval(timer);
+    };
+  }, [time]);
 
   const handleNext = () => {
-    setTime(5);
+    setTime(seconds);
     setPreguntaActual(preguntaActual + 1);
   };
 
@@ -41,12 +43,20 @@ const Geografia = () => {
         return setIsFinish(true);
       }
     }, 700);
+    setTime(seconds);
+  };
+
+  const resetGame = () => {
+    setIsFinish(false);
+    setPreguntaActual(0);
+    setScore(0);
+    setTime(seconds);
   };
 
   return (
     <>
       {isFinish ? (
-        <Terminado score={score} />
+        <Terminado score={score} resetGame={resetGame} />
       ) : (
         <main className="main">
           <h1 className="titulo">PREGUNTA #{preguntaActual + 1}</h1>

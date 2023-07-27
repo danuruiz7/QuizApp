@@ -4,7 +4,6 @@ import "../styles/stylesjuego.css";
 import Terminado from "./Terminado";
 
 const Ciencias = () => {
-  const ruta = "/geo";
   const [preguntaActual, setPreguntaActual] = useState(0);
   const [isFinish, setIsFinish] = useState(false);
   const [score, setScore] = useState(0);
@@ -45,10 +44,17 @@ const Ciencias = () => {
     setTime(20);
   };
 
+  const resetGame = () => {
+    setIsFinish(false);
+    setPreguntaActual(0);
+    setScore(0);
+    setTime(seconds);
+  };
+
   return (
     <>
       {isFinish ? (
-        <Terminado score={score} ruta={ruta} />
+        <Terminado score={score} resetGame={resetGame} />
       ) : (
         <main className="principal">
           <h1 className="titulo">PREGUNTA #{preguntaActual + 1}</h1>
