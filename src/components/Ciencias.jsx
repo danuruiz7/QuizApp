@@ -48,7 +48,7 @@ const Ciencias = () => {
     setIsFinish(false);
     setPreguntaActual(0);
     setScore(0);
-    setTime(seconds);
+    setTime(0);
   };
 
   return (
