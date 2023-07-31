@@ -6,8 +6,8 @@
 }
 
 .titulo {
-  margin: 1rem 0;
-  font-size: 3.5rem;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 3rem;
 }
 
 .container {
@@ -54,11 +54,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .opcion {
   width: 100%;
-  font-size: 1rem;
+  font-size: 100%;
   border: none;
   padding: 0.5rem 1rem;
   border-radius: 50px;
@@ -67,11 +68,19 @@
   background-color: #0a97d4;
   box-shadow: 2px 3px 5px #033f5971;
   cursor: pointer;
-  white-space: nowrap;
+  white-space: break-spaces;
 }
 
 .opcion:active {
   transform: translateY(2px);
+}
+.timer {
+  margin-bottom: 1rem;
+}
+.time-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: green;
 }
 
 .correct {

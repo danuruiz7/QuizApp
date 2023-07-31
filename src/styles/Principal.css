@@ -32,6 +32,11 @@ h2 {
   box-shadow: 2px 3px 5px rgba(140, 133, 194, 0.8);
 }
 
+.categoria:nth-child(even) {
+  background-color: rgb(68, 194, 81);
+  box-shadow: 2px 3px 5px rgba(141, 194, 133, 0.8);
+}
+
 .categoria img {
   width: 65%;
   border-radius: 25px;
@@ -62,7 +67,7 @@ h2 {
   border-radius: 50px;
   font-weight: bold;
   color: #fff;
-  background-color: #0a97d4;
+  background-color: #000000;
   box-shadow: 2px 3px 5px #0a97d471;
   cursor: pointer;
   text-decoration: none;
@@ -70,8 +75,9 @@ h2 {
 }
 
 .info a:hover {
-  color: #000000;
-  box-shadow: 2px 3px 50px #0a97d471;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 3px 50px #14d40a71;
 }
 
 @media (max-width: 550px) {

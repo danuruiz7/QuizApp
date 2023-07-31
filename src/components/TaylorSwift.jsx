@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { geografia } from '../preguntas/preguntas';
+import { taylorSwift } from '../preguntas/preguntas';
 import '../styles/stylesjuego.css';
 import Terminado from './Terminado';
 
@@ -8,7 +8,7 @@ const random = (array) => {
   return hola;
 };
 
-const Geografia = () => {
+const TaylorSwift = () => {
   let seconds = 20;
 
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -27,8 +27,8 @@ const Geografia = () => {
   }
 
   useEffect(() => {
-    if (preguntaActual !== geografia.length) {
-      const orden = random(geografia[preguntaActual].opciones);
+    if (preguntaActual !== taylorSwift.length) {
+      const orden = random(taylorSwift[preguntaActual].opciones);
       setOpciones(orden);
     }
   }, [preguntaActual]);
@@ -63,7 +63,7 @@ const Geografia = () => {
 
     setTimeout(() => {
       setPreguntaActual(preguntaActual + 1);
-      if (preguntaActual === geografia.length - 1) {
+      if (preguntaActual === taylorSwift.length - 1) {
         return setIsFinish(true);
       }
     }, 700);
@@ -89,7 +89,7 @@ const Geografia = () => {
               <p className="time-text" id="time">
                 {time}
               </p>
-            ) : preguntaActual === geografia.length - 1 ? (
+            ) : preguntaActual === taylorSwift.length - 1 ? (
               setIsFinish(true)
             ) : (
               <p
@@ -106,11 +106,11 @@ const Geografia = () => {
           </div>
 
           <div className="container">
-            <h3 className="pregunta">{geografia[preguntaActual].titulo}</h3>
+            <h3 className="pregunta">{taylorSwift[preguntaActual].titulo}</h3>
 
             <img
               className="imagen"
-              src={geografia[preguntaActual].image}
+              src={taylorSwift[preguntaActual].image}
               alt=""
             />
 
@@ -129,7 +129,7 @@ const Geografia = () => {
               })}
             </div>
           </div>
-          {time === 0 && preguntaActual !== geografia.length - 1 && (
+          {time === 0 && preguntaActual !== taylorSwift.length - 1 && (
             <button className="opcion next" onClick={handleNext}>
               Siguiente Pregunta
             </button>
@@ -140,4 +140,4 @@ const Geografia = () => {
   );
 };
 
-export default Geografia;
+export default TaylorSwift;

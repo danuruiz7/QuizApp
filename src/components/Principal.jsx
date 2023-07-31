@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import "../styles/Principal.css";
+import { Link } from 'react-router-dom';
+import '../styles/Principal.css';
 
 const Principal = () => {
   return (
@@ -29,6 +29,18 @@ const Principal = () => {
               <h3>Ciencias</h3>
               <p>Pon aprueba tus conocimientos sobre ciencias</p>
               <Link to="/ciencias">Jugar</Link>
+            </div>
+          </div>
+
+          <div className="categoria">
+            <img
+              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elperiodico.com%2Fes%2Focio-y-cultura%2F20230620%2Ftaylor-swift-concierto-madrid-2024-88915660&psig=AOvVaw3SNC9h6XpbdSMn6uba9dM6&ust=1690909786655000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCTrvy3uYADFQAAAAAdAAAAABAD"
+              alt="TL"
+            />
+            <div className="info">
+              <h3>Taylor Swift</h3>
+              <p>Pon aprueba tus conocimientos sobre Taylor Swift</p>
+              <Link to="/taylor-swift">Jugar</Link>
             </div>
           </div>
         </div>
