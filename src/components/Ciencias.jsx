@@ -17,15 +17,6 @@ const Ciencias = () => {
   const [time, setTime] = useState(seconds);
   const [opciones, setOpciones] = useState([]);
 
-  const $time = document.getElementById('time');
-
-  if (time === 10) {
-    $time.style.color = 'yellow';
-  }
-  if (time === 5) {
-    $time.style.color = 'red';
-  }
-
   useEffect(() => {
     if (preguntaActual !== ciencias.length) {
       const orden = random(ciencias[preguntaActual].opciones);

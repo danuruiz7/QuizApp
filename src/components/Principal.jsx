@@ -34,13 +34,13 @@ const Principal = () => {
 
           <div className="categoria">
             <img
-              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elperiodico.com%2Fes%2Focio-y-cultura%2F20230620%2Ftaylor-swift-concierto-madrid-2024-88915660&psig=AOvVaw3SNC9h6XpbdSMn6uba9dM6&ust=1690909786655000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCTrvy3uYADFQAAAAAdAAAAABAD"
-              alt="TL"
+              src="https://images.pexels.com/photos/2402926/pexels-photo-2402926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Historia"
             />
             <div className="info">
-              <h3>Taylor Swift</h3>
-              <p>Pon aprueba tus conocimientos sobre Taylor Swift</p>
-              <Link to="/taylor-swift">Jugar</Link>
+              <h3>Historia</h3>
+              <p>Pon aprueba tus conocimientos sobre Historia</p>
+              <Link to="/historia">Jugar</Link>
             </div>
           </div>
         </div>

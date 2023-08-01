@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { taylorSwift } from '../preguntas/preguntas';
+import { historia } from '../preguntas/preguntas';
 import '../styles/stylesjuego.css';
 import Terminado from './Terminado';
 
@@ -8,7 +8,7 @@ const random = (array) => {
   return hola;
 };
 
-const TaylorSwift = () => {
+const Historia = () => {
   let seconds = 20;
 
   const [preguntaActual, setPreguntaActual] = useState(0);
@@ -17,18 +17,9 @@ const TaylorSwift = () => {
   const [time, setTime] = useState(seconds);
   const [opciones, setOpciones] = useState([]);
 
-  const $time = document.getElementById('time');
-
-  if (time === 10) {
-    $time.style.color = 'yellow';
-  }
-  if (time === 5) {
-    $time.style.color = 'red';
-  }
-
   useEffect(() => {
-    if (preguntaActual !== taylorSwift.length) {
-      const orden = random(taylorSwift[preguntaActual].opciones);
+    if (preguntaActual !== historia.length) {
+      const orden = random(historia[preguntaActual].opciones);
       setOpciones(orden);
     }
   }, [preguntaActual]);
@@ -63,7 +54,7 @@ const TaylorSwift = () => {
 
     setTimeout(() => {
       setPreguntaActual(preguntaActual + 1);
-      if (preguntaActual === taylorSwift.length - 1) {
+      if (preguntaActual === historia.length - 1) {
         return setIsFinish(true);
       }
     }, 700);
@@ -89,7 +80,7 @@ const TaylorSwift = () => {
               <p className="time-text" id="time">
                 {time}
               </p>
-            ) : preguntaActual === taylorSwift.length - 1 ? (
+            ) : preguntaActual === historia.length - 1 ? (
               setIsFinish(true)
             ) : (
               <p
@@ -106,11 +97,11 @@ const TaylorSwift = () => {
           </div>
 
           <div className="container">
-            <h3 className="pregunta">{taylorSwift[preguntaActual].titulo}</h3>
+            <h3 className="pregunta">{historia[preguntaActual].titulo}</h3>
 
             <img
               className="imagen"
-              src={taylorSwift[preguntaActual].image}
+              src={historia[preguntaActual].image}
               alt=""
             />
 
@@ -129,7 +120,7 @@ const TaylorSwift = () => {
               })}
             </div>
           </div>
-          {time === 0 && preguntaActual !== taylorSwift.length - 1 && (
+          {time === 0 && preguntaActual !== historia.length - 1 && (
             <button className="opcion next" onClick={handleNext}>
               Siguiente Pregunta
             </button>
@@ -140,4 +131,4 @@ const TaylorSwift = () => {
   );
 };
 
-export default TaylorSwift;
+export default Historia;

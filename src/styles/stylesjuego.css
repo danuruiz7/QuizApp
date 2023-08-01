@@ -68,7 +68,7 @@
   background-color: #0a97d4;
   box-shadow: 2px 3px 5px #033f5971;
   cursor: pointer;
-  white-space: break-spaces;
+  white-space: nowrap;
 }
 
 .opcion:active {

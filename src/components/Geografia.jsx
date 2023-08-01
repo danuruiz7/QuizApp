@@ -17,15 +17,6 @@ const Geografia = () => {
   const [time, setTime] = useState(seconds);
   const [opciones, setOpciones] = useState([]);
 
-  const $time = document.getElementById('time');
-
-  if (time === 10) {
-    $time.style.color = 'yellow';
-  }
-  if (time === 5) {
-    $time.style.color = 'red';
-  }
-
   useEffect(() => {
     if (preguntaActual !== geografia.length) {
       const orden = random(geografia[preguntaActual].opciones);

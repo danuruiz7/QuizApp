@@ -93,53 +93,49 @@ export const ciencias = [
   },
 ];
 
-export const taylorSwift = [
+export const historia = [
   {
-    titulo: '¿En qué año lanzó Taylor Swift su álbum debut homónimo?',
+    titulo: '¿En qué año tuvo lugar la Revolución Francesa?',
     opciones: [
-      { textoRespuesta: '2004', isCorrect: false },
-      { textoRespuesta: '2006', isCorrect: true },
-      { textoRespuesta: '2008', isCorrect: false },
-      { textoRespuesta: '2010', isCorrect: false },
+      { textoRespuesta: '1789', isCorrect: true },
+      { textoRespuesta: '1804', isCorrect: false },
+      { textoRespuesta: '1765', isCorrect: false },
+      { textoRespuesta: '1821', isCorrect: false },
     ],
     image:
-      'http://celeb.gate.cc/media/cache/image/upload/t/a/taylor-swift-dekollete-48520.jpg',
+      'https://images.pexels.com/photos/9269135/pexels-photo-9269135.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
   {
-    titulo: '¿Cuál es el nombre del primer sencillo de Taylor Swift?',
+    titulo: '¿Cuál fue el imperio que conquistó gran parte de América del Sur?',
     opciones: [
-      { textoRespuesta: 'Love Story', isCorrect: false },
-      { textoRespuesta: 'You Belong with Me', isCorrect: false },
-      { textoRespuesta: 'Teardrops on My Guitar', isCorrect: true },
-      { textoRespuesta: 'Shake It Off', isCorrect: false },
+      { textoRespuesta: 'Imperio Romano', isCorrect: false },
+      { textoRespuesta: 'Imperio Inca', isCorrect: true },
+      { textoRespuesta: 'Imperio Otomano', isCorrect: false },
+      { textoRespuesta: 'Imperio Mongol', isCorrect: false },
     ],
     image:
-      'http://celeb.gate.cc/media/cache/image/upload/t/a/taylor-swift-hot-91792.jpg',
+      'https://images.pexels.com/photos/259967/pexels-photo-259967.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
   {
     titulo:
-      '¿Cuál de las siguientes películas NO ha protagonizado Taylor Swift?',
+      '¿Qué líder político dirigió la Unión Soviética durante la mayor parte de la Segunda Guerra Mundial?',
     opciones: [
-      { textoRespuesta: 'Cats', isCorrect: false },
-      { textoRespuesta: 'The Giver', isCorrect: false },
-      { textoRespuesta: 'La La Land', isCorrect: true },
-      { textoRespuesta: "Valentine's Day", isCorrect: false },
+      { textoRespuesta: 'Winston Churchill', isCorrect: false },
+      { textoRespuesta: 'Adolf Hitler', isCorrect: false },
+      { textoRespuesta: 'Benito Mussolini', isCorrect: false },
+      { textoRespuesta: 'Joseph Stalin', isCorrect: true },
     ],
     image:
-      'http://celeb.gate.cc/media/cache/image/upload/t/a/taylor-swift-cameltoe-13515.jpg',
+      'https://assets.editorial.aetnd.com/uploads/2009/11/joseph-stalin-gettyimages-464426375.jpg',
   },
   {
-    titulo: '¿Cuál de las siguientes canciones fue escrita por Taylor Swift?',
+    titulo: '¿En qué año llegaron Cristóbal Colón y sus tripulantes a América?',
     opciones: [
-      {
-        textoRespuesta: 'We Are Never Ever Getting Back Together',
-        isCorrect: true,
-      },
-      { textoRespuesta: 'Roar', isCorrect: false },
-      { textoRespuesta: 'Someone Like You', isCorrect: false },
-      { textoRespuesta: 'Bad Guy', isCorrect: false },
+      { textoRespuesta: '1492', isCorrect: true },
+      { textoRespuesta: '1501', isCorrect: false },
+      { textoRespuesta: '1453', isCorrect: false },
+      { textoRespuesta: '1510', isCorrect: false },
     ],
-    image:
-      'http://celeb.gate.cc/media/cache/image/upload/t/a/taylor-swift-wallpaper-211189.jpg',
+    image: 'https://www.lavanguardia.com/uploads/2018/10/08/5fa4488c34c51.jpeg',
   },
 ];

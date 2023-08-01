@@ -3,7 +3,7 @@ import { Routes } from 'react-router-dom';
 import Principal from './Principal';
 import Geografia from './Geografia';
 import Ciencias from './Ciencias';
-import TaylorSwift from './TaylorSwift';
+import Historia from './Historia';
 
 const AppRoutes = () => {
   return (
@@ -12,7 +12,7 @@ const AppRoutes = () => {
         <Route path="/" element={<Principal />} />
         <Route path="/geografia" element={<Geografia />} />
         <Route path="/ciencias" element={<Ciencias />} />
-        <Route path="/taylor-swift" element={<TaylorSwift />} />
+        <Route path="/historia" element={<Historia />} />
       </Routes>
     </>
   );
